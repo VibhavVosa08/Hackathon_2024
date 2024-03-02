@@ -1,3 +1,5 @@
+/*https://colorhunt.co/palette/070f2b1b1a55535c919290c3*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
@@ -5,34 +7,110 @@
 	padding: 0px;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
+	overscroll-behavior: none;
+}
+
+.backgroundImg {
+	box-shadow: 0 0 30px 8px #040716 inset;
+	opacity: 1;
 }
 
 body {
-	background-color: #bfc6d9;
+	background-color: #040716;
+}
+
+button {
+	padding: 0;
+	border: none;
+	background: none;
 }
 
 .navbar {
 	top: 0px;
 	position: fixed;
 	padding-left: 0px;
-	background-color: #363062;
+	background-color: #040716;
 	color: EEF5FF;
 	width: 100vw;
 	height: 90px;
 	margin: auto;
-	z-index: 1;
+	z-index: 2;
+
 }
 
-.dashThing {
+.house {
+	margin-top: 37%;
+}
+
+.figure {
+	position: relative;
+	max-width: 100%;
+	margin-right: 50px;
+}
+
+.figure img.house.hover {
+	position: absolute;
+	top: 15px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	object-fit: contain;
+	opacity: 0;
+	transition: opacity .2s;
+}
+
+
+
+.figure img.house {
+	position: absolute;
+	top: 15px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	object-fit: contain;
+	opacity: 1;
+
+}
+
+.figure:hover img.house.hover {
+	opacity: 1;
+}
+
+.navbar a {
+	font-size: 18;
+
+}
+
+
+
+
+.fadedEdgeBottom {
 	position: fixed;
 	top: 90px;
 	padding-left: 0px;
-	background-color: #435585;
+	background-color: #040716;
 	width: 100vw;
-	height: 10px;
+	height: 250px;
+	margin: auto;
+	margin-top: 40%;
+	margin-bottom: 200px;
+	z-index: 1;
+	background: linear-gradient(to top, #040716, transparent 90%);
+	bottom: 0;
+
+}
+
+.fadedEdgeTop {
+	position: fixed;
+	top: 90px;
+	padding-left: 0px;
+	background-color: #040716;
+	width: 100vw;
+	height: 200px;
 	margin: auto;
 	margin-bottom: 200px;
 	z-index: 1;
+	background: linear-gradient(to bottom, #040716, transparent 80%);
 }
 
 #navtext {
@@ -44,8 +122,8 @@ body {
 hr {
 	border: 0;
 	height: 4px;
-	background-color: #818FB4;
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	background-color: #b4b3d6;
+	/*background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));*/
 	margin-bottom: 7px;
 }
 
@@ -59,10 +137,17 @@ pages {
 
 .wrapper {
 	margin: 150px auto;
+	padding-top: 100px;
 	width: 70%;
 	animation: scroll ease-in-out both;
 	animation-timeline: view();
 	animation-range: entry 50% cover 50%;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.wrapper p {
+	color: #b4b3d6;
+	float: center;
 }
 
 
@@ -96,28 +181,47 @@ pages {
 }
 
 .pages div {
-	padding-bottom: 500px;
+	padding-bottom: 200px;
+
 }
 
-
-
-.text-box h1 {
+.text-box-left h1 {
 	font-size: 48px;
-	color: #08182b;
+	color: #b4b3d6;
+	text-align: right;
 }
 
-.text-box p {
+.text-box-left p {
 	font-size: 18px;
-	color: #08182b;
+	color: #b4b3d6;
+	text-align: right;
 }
 
-.pageimg {
+.text-box-right h1 {
+	font-size: 48px;
+	color: #b4b3d6;
+}
+
+.text-box-right p {
+	font-size: 18px;
+	color: #b4b3d6;
+}
+
+.pageimgright {
 	max-height: 320;
 	max-width: 320px;
 	float: left;
-	border: 5px solid #818FB4;
-	border-radius: 10px;
+	border: 5px solid #b4b3d6;
 	margin-right: 15px;
+  
+}
+
+.pageimgleft {
+	max-height: 320;
+	max-width: 320px;
+	float: right;
+	border: 5px solid #b4b3d6;
+	margin-left: 15px;
 }
 
 html {
@@ -164,13 +268,19 @@ li {
 
 li a {
 	display: block;
-	color: white;
+	color: #b4b3d6;
 	text-align: center;
 	padding: 0px 16px;
 	text-decoration: none;
 	font-size: 30px;
 	height: 90px;
 	font-family: 'Trebuchet MS', sans-serif;
+	transition: color .2s;
+}
+
+li img {
+	display: block;
+	width: 54px;
 }
 
 li img {
@@ -180,7 +290,7 @@ li img {
 }
 
 a:hover {
-	color: #a9c8ef;
+	color: #fff;
 }
 
 :target {
@@ -191,7 +301,6 @@ a:hover {
 	height: 100vh;
 	padding: 1rem;
 }
-
 
 /*https://colorhunt.co/palette/eef5ffb4d4ff86b6f6176b87*/
 /*https://blog.hubspot.com/website/css-fade-in#:~:text=In%20the%20CSS%2C%20use%20the,creates%20the%20fade%2Din%20effect.*/

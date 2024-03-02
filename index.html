@@ -1,3 +1,4 @@
+<div class="fadedEdgeTop"></div>
 <!DOCTYPE html>
 <html>
 <!--GUYS LOCK THE NAVBAR TO SCROLL GET TO WORK-->
@@ -5,10 +6,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>replit</title>
+	<title>Placeholder Title Name</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="buttons.js"></script>
 	<script src="script.js"></script>
+
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init();
@@ -17,54 +20,71 @@
 
 <body>
 	<div class=" navbar">
-		<div id="navtext">
+		<div id="navtext" style="width: 90%">
 			<ul>
-				<li><a href="#0"><img src="images/amgous.png" alt="Logo" style="width:80px;height:80px;"></a></li>
-				<li>
-					<div id="listfiller"></div>
+				<li class="figure"><a href="#0">
+						<img class="house" src="images/homeButton.png" alt="Logo" id="house"
+							style="width:54px;height:30px;">
+						<img class="house hover" src="images/homeButtonWhite.png" alt="Logo" id="house"
+							style="width:54px;height:30px;">
+					</a>
 				</li>
-				<li><a href="#1">Generic1</a></li>
-				<li><a href="#2">Generic2</a></li>
-				<li><a href="#3">Generic3</a></li>
-				<li><a href="#4">Generic4</a></li>
+				<li><strong><a href="#1">SaLT</a></strong></li>
+				<li><strong><a href="#2">Angaza Center</a></strong></li>
+				<li><strong><a href="#3">Gratitude Generation</a></strong></li>
+				<li><strong><a href="#4">Give N Kind</a></strong></li>
 			</ul>
 		</div>
+		<div style="margin-left: 90%; height: 90px" id="lightDarkTheme">
+			<button onclick="changeTheme(event)"><img src="images/moon.png" id="myButton"
+					style="width:60px;height:60px;"></button>
+		</div>
 	</div>
-	<div class="dashThing"></div>
+	<div></div>
+	<div class="fadedEdgeTop"></div>
+	<div class="fadedEdgeBottom"></div>
 
 	<div class="main">
 
 		<div class="pages">
 
-			<div class="wrapper" id="0" data-aos="fade" data-aos-duration="2000">
-				<img class="pageimg" src="images/amgous.png" alt="img">
-				<div class="text-box">
+      
+      
+			<div class=" wrapper" id="0" data-aos="fade-right" data-aos-duration="1000">
+				<img class="pageimgright" src="images/amgous.png" alt="img">
+				<div class="text-box-right">
 					<h1>
 						Generic0
 					</h1>
 					<hr>
 					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem has been
-						the
-						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-						of
-						type
-						and scrambled it to make a type book. It has survived not only five centuries, but also the
-						leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-						1960s
-						with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-						desktop
-						publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						This is not completed yet
 					</p>
 				</div>
 			</div>
 
 
-			<div class="wrapper" id="1" data-aos="fade" data-aos-duration="2000">
-				<img class="pageimg" src="images/amgous.png" alt="img">
-				<div class="text-box">
+			<div class="wrapper" id="1" data-aos="fade-up-left" data-aos-duration="1000">
+				<img class="pageimgleft" src="images/salt.png" alt="img">
+				<div class="text-box-left">
 					<h1>
-						Generic1
+						SaLT
+					</h1>
+					<hr>
+					<p>
+						SaLT prioritizes providing service for the needs of different communities, the learning of the world and oneself, and to create long lasting relationships with other members of SaLT. SaLT 
+					</p>
+				</div>
+
+			</div>
+
+
+
+			<div class="wrapper" id="2" data-aos="fade-up-right" data-aos-duration="1000">
+				<img class="pageimgright" src="images/angaza_center_logo.jpeg" alt="img">
+				<div class="text-box-right">
+					<h1>
+						Angaza Center
 					</h1>
 					<hr>
 					<p>
@@ -83,13 +103,11 @@
 				</div>
 			</div>
 
-
-
-			<div class="wrapper" id="2" data-aos="fade" data-aos-duration="2000">
-				<img class="pageimg" src="images/amgous.png" alt="img">
-				<div class="text-box">
+			<div class="wrapper" id="3" data-aos="fade-up-left" data-aos-duration="1000">
+				<img class="pageimgleft" src="images/welcome_logo_G2_Pink_with_Text_Web__1_.png" alt="img">
+				<div class="text-box-left">
 					<h1>
-						Generic2
+						Gratitude Generation
 					</h1>
 					<hr>
 					<p>
@@ -106,13 +124,14 @@
 						publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 					</p>
 				</div>
+
 			</div>
 
-			<div class="wrapper" id="3" data-aos="fade" data-aos-duration="2000">
-				<img class="pageimg" src="images/amgous.png" alt="img">
-				<div class="text-box">
+			<div class="wrapper" id="4" data-aos="fade-up-right" data-aos-duration="1000">
+				<img class="pageimgright" src="images/give n kind logo.png" alt="img">
+				<div class="text-box-right">
 					<h1>
-						Generic3
+						Give N Kind
 					</h1>
 					<hr>
 					<p>
@@ -129,36 +148,16 @@
 						publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 					</p>
 				</div>
-			</div>
-			<div class="wrapper" id="4" data-aos="fade" data-aos-duration="2000">
-				<img class="pageimg" src="images/amgous.png" alt="img">
-				<div class="text-box">
-					<h1>
-						Generic4
-					</h1>
-					<hr>
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem has been
-						the
-						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-						of
-						type
-						and scrambled it to make a type book. It has survived not only five centuries, but also the
-						leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-						1960s
-						with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-						desktop
-						publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-					</p>
+				<div datat data-aos="fade-up">
+					<p style="text-align: center;">Stevenson 2024 Hackathon</p>
+
 				</div>
 			</div>
-    </div>
-    <hr>
+		</div>
+
+
 	</div>
 
-
-
-	<script src="script.js"></script>
 
 </body>
 
