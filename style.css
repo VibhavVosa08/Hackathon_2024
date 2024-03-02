@@ -20,6 +20,7 @@ body {
 	width: 100vw;
 	height: 90px;
 	margin: auto;
+	z-index: 1;
 }
 
 .dashThing {
@@ -31,6 +32,7 @@ body {
 	height: 10px;
 	margin: auto;
 	margin-bottom: 200px;
+	z-index: 1;
 }
 
 #navtext {
@@ -189,7 +191,6 @@ a:hover {
 	height: 100vh;
 	padding: 1rem;
 }
-
 
 
 /*https://colorhunt.co/palette/eef5ffb4d4ff86b6f6176b87*/
