@@ -3,80 +3,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
-	overscroll-behavior: none;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overscroll-behavior: none;
 }
 
 
 
 body {
-	background-color: #232D3F;
+  background-color: #232D3F;
 }
 
 button {
-	padding: 0;
-	border: none;
-	background: none;
+  padding: 0;
+  border: none;
+  background: none;
 }
 
 .navbar {
-	top: 0px;
-	position: fixed;
-	padding-left: 25%;
-	background-color: #232D3F;
-	color: EEF5FF;
-	width: 100vw;
-	height: 90px;
-	margin: auto;
-	z-index: 2;
+  top: 0px;
+  position: fixed;
+  background-color: #232D3F;
+  color: EEF5FF;
+  width: 100vw;
+  height: 90px;
+  margin: auto;
+  z-index: 2;
+  padding-left: 25%;
 
 }
 
 
 
 .house {
-	margin-top: 37%;
+  margin-top: 37%;
 }
 
 .figure {
-	position: relative;
-	max-width: 100%;
-	margin-right: 50px;
+  position: relative;
+  max-width: 100%;
+  margin-right: 50px;
 }
 
 .figure img.house.hover {
-	position: absolute;
-	top: 15px;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	object-fit: contain;
-	opacity: 0;
-	transition: opacity .2s;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
 }
 
 
 
 .figure img.house {
-	position: absolute;
-	top: 15px;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	object-fit: contain;
-	opacity: 1;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 1;
 
 }
 
 .figure:hover img.house.hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 .navbar a {
-	font-size: 18;
+  font-size: 18;
 
 }
 
@@ -84,72 +84,72 @@ button {
 
 
 .fadedEdgeBottom {
-	position: fixed;
-	top: 90px;
-	padding-left: 0px;
-	background-color: #232D3F;
-	width: 100vw;
-	height: 250px;
-	margin: auto;
-	margin-top: 40%;
-	margin-bottom: 0px;
-	z-index: 1;
-	background: linear-gradient(to top, #232D3F, transparent 90%);
-	bottom: 0;
+  position: fixed;
+  top: 90px;
+  padding-left: 0px;
+  background-color: #232D3F;
+  width: 100vw;
+  height: 250px;
+  margin: auto;
+  margin-top: 40%;
+  margin-bottom: 0px;
+  z-index: 1;
+  background: linear-gradient(to top, #232D3F, transparent 90%);
+  bottom: 0;
 
 }
 
 .fadedEdgeTop {
-	position: fixed;
-	top: 90px;
-	padding-left: 0px;
-	background-color: #232D3F;
-	width: 100vw;
-	height: 200px;
-	margin: auto;
-	margin-bottom: 200px;
-	z-index: 1;
-	background: linear-gradient(to bottom, #232D3F, transparent 80%);
+  position: fixed;
+  top: 90px;
+  padding-left: 0px;
+  background-color: #232D3F;
+  width: 100vw;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 200px;
+  z-index: 1;
+  background: linear-gradient(to bottom, #232D3F, transparent 80%);
 }
 
 #navtext {
-	opacity: 1;
-	height: 9cap;
-	float: left;
+  opacity: 1;
+  height: 9cap;
+  float: left;
 }
 
 hr {
-	border: 0;
-	height: 4px;
-	background-color: #b4b3d6;
-	/*background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));*/
-	margin-bottom: 7px;
+  border: 0;
+  height: 4px;
+  background-color: #b4b3d6;
+  /*background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));*/
+  margin-bottom: 7px;
 }
 
 pages {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	scroll-snap-type: y mandatory;
-	overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 
 
 }
 
 .wrapper {
-	margin: 150px auto;
-	padding-top: 300px;
-	width: 70%;
-	animation: scroll ease-in-out both;
-	animation-timeline: view();
-	animation-range: entry 50% cover 50%;
-	background-color: rgba(0, 0, 0, 0);
+  margin: 150px auto;
+  padding-top: 300px;
+  width: 70%;
+  animation: scroll ease-in-out both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .wrapper p {
-	color: #b4b3d6;
-	float: center;
+  color: #b4b3d6;
+  float: center;
 }
 
 
@@ -177,57 +177,57 @@ pages {
 }*/
 
 .main {
-	margin-top: 100px;
-	height: 1500px;
-	/* Used in this example to enable scrolling */
+  margin-top: 100px;
+  height: 1500px;
+  /* Used in this example to enable scrolling */
 }
 
 .pages div {
-	padding-bottom: 200px;
+  padding-bottom: 200px;
 
 }
 
-.text-box-left h1 {
-	font-size: 48px;
-	color: #b4b3d6;
-	text-align: right;
+.text-box-left {
+  font-size: 32px;
+  color: #b4b3d6;
+  text-align: right;
 }
 
 .text-box-left p {
-	font-size: 18px;
-	color: #b4b3d6;
-	text-align: right;
+  font-size: 18px;
+  color: #b4b3d6;
+  text-align: right;
 }
 
 .text-box-right h1 {
-	font-size: 48px;
-	color: #b4b3d6;
+  font-size: 48px;
+  color: #b4b3d6;
 }
 
 .text-box-right p {
-	font-size: 18px;
-	color: #b4b3d6;
+  font-size: 18px;
+  color: #b4b3d6;
 }
 
 .pageimgright {
-	max-height: 320;
-	max-width: 320px;
-	float: left;
-	border: 5px solid #b4b3d6;
-	margin-right: 15px;
+  max-height: 320;
+  max-width: 320px;
+  float: left;
+  border: 5px solid #b4b3d6;
+  margin-right: 15px;
 
 }
 
 .pageimgleft {
-	max-height: 320;
-	max-width: 320px;
-	float: right;
-	border: 5px solid #b4b3d6;
-	margin-left: 15px;
+  max-height: 320;
+  max-width: 320px;
+  float: right;
+  border: 5px solid #b4b3d6;
+  margin-left: 15px;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /*.color-box2 {
@@ -252,86 +252,87 @@ html {
 }*/
 
 ul {
-	margin-top: 0;
-	list-style-type: none;
-	margin: 0;
-	overflow: hidden;
-	height: 90px;
-	padding: 0;
-	line-height: 100px;
+  margin-top: 0;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  height: 90px;
+  padding: 0;
+  line-height: 100px;
 }
 
 li {
-	float: left;
-	margin-top: 0;
-	height: 90px;
-	line-height: 90px;
+  float: left;
+  margin-top: 0;
+  height: 90px;
+  line-height: 90px;
 }
 
 li a {
-	display: block;
-	color: #b4b3d6;
-	text-align: center;
-	padding: 0px 16px;
-	text-decoration: none;
-	font-size: 30px;
-	height: 90px;
-	font-family: 'Trebuchet MS', sans-serif;
-	transition: color .2s;
+  display: block;
+  color: #b4b3d6;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  height: 90px;
+  font-family: 'Trebuchet MS', sans-serif;
+  transition: color .2s;
 }
 
 li img {
-	display: block;
-	width: 54px;
+  display: block;
+  width: 54px;
 }
 
 li img {
-	margin-left: 20px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 a:hover {
-	color: #fff;
+  color: #fff;
 }
 
 h1 a {
-	color: #fff;
+  color: #b4b3d6;
+  text-decoration: none;
 }
 
 
 .section {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
 }
 
 #zero {
-	background-image: url("images/homepageImg.png");
-	box-shadow: 0 0 35px 40px #232D3F inset;
+  background-image: url("images/homepageImg.png");
+  box-shadow: 0 0 35px 40px #232D3F inset;
 }
 
 #one {
-	background-image: url("images/saltImg.png");
-	box-shadow: 0 0 35px 40px #232D3F inset;
+  background-image: url("images/saltImg.png");
+  box-shadow: 0 0 35px 40px #232D3F inset;
 }
 
 #two {
-	background-image: url("images/angazaImg.png");
-	box-shadow: 0 0 35px 40px #232D3F inset;
+  background-image: url("images/angazaImg.png");
+  box-shadow: 0 0 35px 40px #232D3F inset;
 }
 
 #three {
-	background-image: url("images/gratitudeImg.png");
-	box-shadow: 0 0 35px 40px #232D3F inset;
+  background-image: url("images/gratitudeImg.png");
+  box-shadow: 0 0 35px 40px #232D3F inset;
 }
 
 #four {
-	background-image: url("images/giveImg.png");
-	box-shadow: 0 0 35px 40px #232D3F inset;
-	height: 45%
+  background-image: url("images/giveImg.png");
+  box-shadow: 0 0 35px 40px #232D3F inset;
+  height: 45%
 }
 
 /*https://colorhunt.co/palette/eef5ffb4d4ff86b6f6176b87*/
@@ -340,162 +341,162 @@ h1 a {
 
 
 .darkmode {
-	/*https://colorhunt.co/palette/070f2b1b1a55535c919290c3*/
+  /*https://colorhunt.co/palette/070f2b1b1a55535c919290c3*/
 
-	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-	* {
-		margin: 0px;
-		padding: 0px;
-		box-sizing: border-box;
-		font-family: 'Poppins', sans-serif;
-		overscroll-behavior: none;
-	}
-
-
-
-	body {
-		background-color: #ecf2fe;
-	}
-
-	button {
-		padding: 0;
-		border: none;
-		background: none;
-	}
-
-	.navbar {
-		top: 0px;
-		position: fixed;
-		padding-left: 25%;
-		background-color: #ecf2fe;
-		color: EEF5FF;
-		width: 100vw;
-		height: 90px;
-		margin: auto;
-		z-index: 2;
-
-	}
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overscroll-behavior: none;
+  }
 
 
 
-	.house {
-		margin-top: 37%;
-	}
+  body {
+    background-color: #ecf2fe;
+  }
 
-	.figure {
-		position: relative;
-		max-width: 100%;
-		margin-right: 50px;
-	}
+  button {
+    padding: 0;
+    border: none;
+    background: none;
+  }
 
-	.figure img.house.hover {
-		position: absolute;
-		top: 15px;
-		right: 0;
-		left: 0;
-		bottom: 0;
-		object-fit: contain;
-		opacity: 0;
-		transition: opacity .2s;
-	}
+  .navbar {
+    top: 0px;
+    position: fixed;
+    padding-left: 25%;
+    background-color: #ecf2fe;
+    color: EEF5FF;
+    width: 100vw;
+    height: 90px;
+    margin: auto;
+    z-index: 2;
 
-
-
-	.figure img.house {
-		position: absolute;
-		top: 15px;
-		right: 0;
-		left: 0;
-		bottom: 0;
-		object-fit: contain;
-		opacity: 1;
-
-	}
-
-	.figure:hover img.house.hover {
-		opacity: 1;
-	}
-
-	.navbar a {
-		font-size: 18;
-
-	}
+  }
 
 
 
+  .house {
+    margin-top: 37%;
+  }
 
-	.fadedEdgeBottom {
-		position: fixed;
-		top: 90px;
-		padding-left: 0px;
-		background-color: #ecf2fe;
-		width: 100vw;
-		height: 250px;
-		margin: auto;
-		margin-top: 40%;
-		margin-bottom: 200px;
-		z-index: 1;
-		background: linear-gradient(to top, #ecf2fe, transparent 90%);
-		bottom: 0;
+  .figure {
+    position: relative;
+    max-width: 100%;
+    margin-right: 50px;
+  }
 
-	}
-
-	.fadedEdgeTop {
-		position: fixed;
-		top: 90px;
-		padding-left: 0px;
-		background-color: #ecf2fe;
-		width: 100vw;
-		height: 200px;
-		margin: auto;
-		margin-bottom: 200px;
-		z-index: 1;
-		background: linear-gradient(to bottom, #ecf2fe, transparent 80%);
-	}
-
-	#navtext {
-		opacity: 1;
-		height: 9cap;
-		float: left;
-	}
-
-	hr {
-		border: 0;
-		height: 4px;
-		background-color: #ecf2fe;
-		/*background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));*/
-		margin-bottom: 7px;
-	}
-
-	pages {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		min-height: 100vh;
-		scroll-snap-type: y mandatory;
-		overflow-y: scroll;
+  .figure img.house.hover {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+  }
 
 
-	}
 
-	.wrapper {
-		margin: 150px auto;
-		padding-top: 300px;
-		width: 70%;
-		animation: scroll ease-in-out both;
-		animation-timeline: view();
-		animation-range: entry 50% cover 50%;
-		background-color: rgba(0, 0, 0, 0);
-	}
+  .figure img.house {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 1;
 
-	.wrapper p {
-		color: #ecf2fe;
-		float: center;
-	}
+  }
+
+  .figure:hover img.house.hover {
+    opacity: 1;
+  }
+
+  .navbar a {
+    font-size: 18;
+
+  }
 
 
-	/*
+
+
+  .fadedEdgeBottom {
+    position: fixed;
+    top: 90px;
+    padding-left: 0px;
+    background-color: #ecf2fe;
+    width: 100vw;
+    height: 250px;
+    margin: auto;
+    margin-top: 40%;
+    margin-bottom: 200px;
+    z-index: 1;
+    background: linear-gradient(to top, #ecf2fe, transparent 90%);
+    bottom: 0;
+
+  }
+
+  .fadedEdgeTop {
+    position: fixed;
+    top: 90px;
+    padding-left: 0px;
+    background-color: #ecf2fe;
+    width: 100vw;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 200px;
+    z-index: 1;
+    background: linear-gradient(to bottom, #ecf2fe, transparent 80%);
+  }
+
+  #navtext {
+    opacity: 1;
+    height: 9cap;
+    float: left;
+  }
+
+  hr {
+    border: 0;
+    height: 4px;
+    background-color: #232D3F;
+    /*background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));*/
+    margin-bottom: 7px;
+  }
+
+  pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+
+
+  }
+
+  .wrapper {
+    margin: 150px auto;
+    padding-top: 300px;
+    width: 70%;
+    animation: scroll ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .wrapper p {
+    color: #232D3F;
+    float: center;
+  }
+
+
+  /*
 	@keyframes scroll {
 		from {
 			opacity: 1;
@@ -518,61 +519,61 @@ h1 a {
 		}
 	}*/
 
-	.main {
-		margin-top: 100px;
-		height: 1500px;
-		/* Used in this example to enable scrolling */
-	}
+  .main {
+    margin-top: 100px;
+    height: 1500px;
+    /* Used in this example to enable scrolling */
+  }
 
-	.pages div {
-		padding-bottom: 200px;
+  .pages div {
+    padding-bottom: 200px;
 
-	}
+  }
 
-	.text-box-left h1 {
-		font-size: 48px;
-		color: #ecf2fe;
-		text-align: right;
-	}
+  .text-box-left h1 {
+    font-size: 48px;
+    color: #232D3F;
+    text-align: right;
+  }
 
-	.text-box-left p {
-		font-size: 18px;
-		color: #ecf2fe;
-		text-align: right;
-	}
+  .text-box-left p {
+    font-size: 18px;
+    color: #232D3F;
+    text-align: right;
+  }
 
-	.text-box-right h1 {
-		font-size: 48px;
-		color: #ecf2fe;
-	}
+  .text-box-right h1 {
+    font-size: 48px;
+    color: #232D3F;
+  }
 
-	.text-box-right p {
-		font-size: 18px;
-		color: #ecf2fe;
-	}
+  .text-box-right p {
+    font-size: 18px;
+    color: #232D3F;
+  }
 
-	.pageimgright {
-		max-height: 320;
-		max-width: 320px;
-		float: left;
-		border: 5px solid #ecf2fe;
-		margin-right: 15px;
+  .pageimgright {
+    max-height: 320;
+    max-width: 320px;
+    float: left;
+    border: 5px solid #232D3F;
+    margin-right: 15px;
 
-	}
+  }
 
-	.pageimgleft {
-		max-height: 320;
-		max-width: 320px;
-		float: right;
-		border: 5px solid #ecf2fe;
-		margin-left: 15px;
-	}
+  .pageimgleft {
+    max-height: 320;
+    max-width: 320px;
+    float: right;
+    border: 5px solid #232D3F;
+    margin-left: 15px;
+  }
 
-	html {
-		scroll-behavior: smooth;
-	}
+  html {
+    scroll-behavior: smooth;
+  }
 
-	/*.color-box2 {
+  /*.color-box2 {
 		padding-left: 0px;
 		background-color: #86B6F6;
 		width: 100vw;
@@ -593,80 +594,87 @@ h1 a {
 		height: 200px;
 	}*/
 
-	ul {
-		margin-top: 0;
-		list-style-type: none;
-		margin: 0;
-		overflow: hidden;
-		height: 90px;
-		padding: 0;
-		line-height: 100px;
-	}
+  ul {
+    margin-top: 0;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    height: 90px;
+    padding: 0;
+    line-height: 100px;
+  }
 
-	li {
-		float: left;
-		margin-top: 0;
-		height: 90px;
-		line-height: 90px;
-	}
+  li {
+    float: left;
+    margin-top: 0;
+    height: 90px;
+    line-height: 90px;
+  }
 
-	li a {
-		display: block;
-		color: #40404f;
-		text-align: center;
-		padding: 0px 16px;
-		text-decoration: none;
-		font-size: 30px;
-		height: 90px;
-		font-family: 'Trebuchet MS', sans-serif;
-		transition: color .2s;
-	}
+  li a {
+    display: block;
+    color: #232D3F;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    height: 90px;
+    font-family: 'Trebuchet MS', sans-serif;
+    transition: color .2s;
+  }
 
-	li img {
-		display: block;
-		width: 54px;
-	}
+  li img {
+    display: block;
+    width: 54px;
+  }
 
-	li img {
-		margin-left: 20px;
-		margin-top: 5px;
-		margin-bottom: 5px;
-	}
+  li img {
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 
-	a:hover {
-		color: #fff;
-	}
+  a {
+    color: #555;
+  }
+
+  a:hover {
+    color: #000;
+  }
 
 
-	.section {
-		height: 100vh;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		scroll-snap-align: start;
-	}
+  .section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+  }
 
-	#zero {
-		background-color: red;
-	}
+  #zero {
+    background-image: url("images/HomepageLIGHT.png");
+    box-shadow: 0 0 35px 40px #ecf2fe inset;
+  }
 
-	#one {
-		background-image: url("images/saltImg.png");
-		box-shadow: 0 0 35px 35px #ecf2fe inset;
-	}
+  #one {
+    background-image: url("images/saltLIGHT.png");
+    box-shadow: 0 0 35px 40px #ecf2fe inset;
+  }
 
-	#two {
-		background-image: url("images/angazaImg.png");
-		box-shadow: 0 0 35px 35px #ecf2fe inset;
-	}
+  #two {
+    background-image: url("images/angazaLight.png");
+    box-shadow: 0 0 35px 40px #ecf2fe inset;
+  }
 
-	#three {}
+  #three {
+    background-image: url("images/gratitudeLight.png");
+    box-shadow: 0 0 35px 40px #ecf2fe inset;
+  }
 
-	#four {
-		background-image: url("images/giveImg.png");
-		box-shadow: 0 0 35px 35px #ecf2fe inset;
-	}
+  #four {
+    background-image: url("images/givekindLIGHT.png");
+    box-shadow: 0 0 35px 40px #ecf2fe inset;
+  }
 
-	/*https://colorhunt.co/palette/eef5ffb4d4ff86b6f6176b87*/
-	/*https://blog.hubspot.com/website/css-fade-in#:~:text=In%20the%20CSS%2C%20use%20the,creates%20the%20fade%2Din%20effect.*/
+  /*https://colorhunt.co/palette/eef5ffb4d4ff86b6f6176b87*/
 }
