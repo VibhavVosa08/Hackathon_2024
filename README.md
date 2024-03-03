@@ -1,5 +1,1 @@
-Greetings, this is a completely normal and generic README that will not be changed later.
-
-
-
-I hope...
+Greetings, this is our Charity website designed for Hackathon 2024!
